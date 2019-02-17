@@ -1,0 +1,14 @@
+@import "../../global/css/index";
+
+.undoRedoContainer {
+  display: flex;
+
+  button {
+    @extend %defaultButton;
+
+    &:disabled {
+      background: $defaultContrastColor;
+      color: $defaultPurpleColor;
+    }
+  }
+}

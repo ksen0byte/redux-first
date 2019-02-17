@@ -1,0 +1,28 @@
+@import "../../global/css/index";
+
+%highlightedLink {
+  background-color: $defaultDarkPurpleColor;
+  color: #fff;
+  box-shadow: 0 0 0 2px $defaultDarkPurpleColor;
+  outline: none;
+}
+
+.link {
+  color: $defaultPurpleColor;
+  text-decoration: underline;
+  transition: outline-offset .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    @extend %highlightedLink;
+  }
+
+  &.selected {
+    @extend %highlightedLink;
+    cursor: default;
+    text-decoration: none;
+  }
+
+}
+
+

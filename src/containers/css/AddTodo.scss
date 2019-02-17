@@ -1,0 +1,25 @@
+@import "../../global/css/index";
+
+.addTodoContainer {
+  display: flex;
+  padding: $defaultPadding;
+
+  .inputContainer {
+    display: flex;
+  }
+
+  input {
+    border: $defaultBorderWidth $defaultBorderStyle $defaultPurpleColor;
+
+    font-size: inherit;
+    line-height: 1.5em;
+
+    &.error {
+      border: $defaultBorderWidth $defaultBorderStyle red;
+    }
+  }
+
+  button {
+    @extend %defaultButton;
+  }
+}
